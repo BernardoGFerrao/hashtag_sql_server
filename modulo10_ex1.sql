@@ -1,0 +1,17 @@
+
+DECLARE @valor1 INT = 10,
+		@valor2 INT = 5, 
+		@valor3 INT = 34,
+		@valor4 INT = 7
+
+DECLARE @SOMA INT = @valor1 + @valor2,
+		@SUBTRACAO INT = @valor3 - @valor4,
+		@MULTIPLICACAO FLOAT = CAST(@valor1 AS FLOAT) * @valor4,
+		@DIVISAO FLOAT = CAST(@valor3 AS FLOAT) / @valor4
+
+PRINT @SOMA 
+PRINT @SUBTRACAO 
+PRINT @MULTIPLICACAO 
+PRINT @DIVISAO 
+
+PRINT ROUND(@DIVISAO, 2)
